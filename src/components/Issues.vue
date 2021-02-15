@@ -2,7 +2,9 @@
   <div>
     <body class="is-preload">
       <NavBar />
-      <Header :bannerImage="this.selectedIssue.banner" />
+      <section v-if="this.selectedIssue.id == 1" id="headerOne"></section>
+      <section v-else-if="this.selectedIssue.id == 2" id="headerTwo"></section>
+      <section v-else-if="this.selectedIssue.id == 3" id="headerThree"></section>
 
       <!-- <section id="issueNav" class="main style2">
 			
@@ -13,13 +15,19 @@
         <div class="container">
           <ul class="actions">
             <router-link to="#"
-              ><a @click="displayIssue('one')" href="#" class="button primary">Issue One</a></router-link
+              ><a @click="displayIssue('one')" href="#" class="button primary"
+                >Issue One</a
+              ></router-link
             >
             <router-link to="#"
-              ><a @click="displayIssue('two')" href="#" class="button primary">Issue Two</a></router-link
+              ><a @click="displayIssue('two')" href="#" class="button primary"
+                >Issue Two</a
+              ></router-link
             >
             <router-link to="#"
-              ><a @click="displayIssue('three')" href="#" class="button primary">Issue Three</a></router-link
+              ><a @click="displayIssue('three')" href="#" class="button primary"
+                >Issue Three</a
+              ></router-link
             >
           </ul>
         </div>
@@ -91,14 +99,12 @@
 </template>
 
 <script>
-import Header from "./Header.vue";
 import NavBar from "./NavBar.vue";
 
 export default {
   name: "Issues",
   components: {
-    NavBar,
-    Header,
+    NavBar
   },
   data: function () {
     return {
@@ -108,33 +114,36 @@ export default {
           title: "This is the first issue",
           content: "Some content to display",
           banner: "../assets/css/images/peace.svg",
+          id: 1
         },
         two: {
           title: "This is the second issue",
           content: "Some content to display",
           banner: "../assets/css/images/home-title-card.png",
-		},
-		three: {
+          id: 2
+        },
+        three: {
           title: "This is the third issue",
           content: "Some content to display",
           banner: "../assets/css/images/home-title-card.png",
+          id: 3
         },
       },
     };
   },
   methods: {
-    displayIssue: function(issue) {
-	switch (issue) {
-		case "one":
-			this.selectedIssue = this.content.one;
-			break
-		case "two":
-			this.selectedIssue = this.content.two;
-			break
-		case "three":
-			this.selectedIssue = this.content.three;
-			break
-	}
+    displayIssue: function (issue) {
+      switch (issue) {
+        case "one":
+          this.selectedIssue = this.content.one;
+          break;
+        case "two":
+          this.selectedIssue = this.content.two;
+          break;
+        case "three":
+          this.selectedIssue = this.content.three;
+          break;
+      }
       console.log("fuck", issue, "selected", this.selectedIssue);
     },
   },
@@ -180,8 +189,36 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color:#8b0c0e;
-  color:white !important;
+  background-color: #8b0c0e;
+  color: white !important;
+}
+
+#headerOne {
+  height:480px; background-image: url('../assets/css/images/peace.svg');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#headerTwo {
+  height:480px; background-image: url('../assets/css/images/home-title-card.png');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#headerThree {
+  height:480px; background-image: url('../assets/css/images/home-title-card.png');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 </style>
 

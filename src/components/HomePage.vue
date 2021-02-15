@@ -2,7 +2,7 @@
   <div>
     <body class="is-preload">
       <NavBar />
-      <Header :bannerImage="this.image" />
+      <Header/>
       <!-- One -->
       <section id="one" class="main style1">
         <div class="container">
@@ -10,14 +10,16 @@
             <div class="col-6 col-12-medium">
               <header class="major">
                 <h2 class="m13">
-                  Lorem ipsum dolor adipiscing amet dolor consequat
+                  From Lorna Rd to the West Selden Apartments, and Blue Hill Ave
+                  triple deckers, D4 has always been my home.
                 </h2>
               </header>
               <p>
-                Adipiscing a commodo ante nunc accumsan et interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis sed volutpat
-                aclacus nascetur ac non. Lorem curae et ante amet sapien sed
-                tempus adipiscing id accumsan.
+                District 4 deserves better! We deserve to have a public high
+                school in Mattapan, We deserve to have stable housing, we
+                deserve safety, we deserve to have access to healthy foods, we
+                deserve to breathe clean air and we deserve to be listened to
+                when community demands are made. We deserve better.
               </p>
               <a href="#one" class="button primary">Learn More</a>
             </div>
@@ -42,30 +44,58 @@
             <div class="col-6 col-12-medium">
               <header class="major">
                 <h2>
-                  Lorem ipsum dolor adipiscing<br />
-                  amet dolor consequat
+                  As a community organizer, survivor, and longtime resident of
+                  District 4, I wanted to create a campaign that is framed by my
+                  lived experiences. Born from a Haitian Immigrant family I
+                  value accessibility, safety, and love.
                 </h2>
               </header>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                I believe that everyone should have access to their immediate
+                needs. We need to make sure that information and resources are
+                easily reached by those who need them. We need to reimagine and
+                innovate our relationship with the community. I believe in
+                reimagining safety to create new ways that will ensure our
+                community’s safety and health. In my decision-making process, I
+                will always prioritize and center the happiness, health, and joy
+                of the residents of District 4, my peers, team members, and
+                myself to ensure the well-being of our community. I value
+                learning that is non-linear and accessible to all. In my
+                decision-making, I want to envision continuous, healthy,
+                sustainable lives that encourage people to think more about
+                building, innovating, and growing as a community, neighbors, and
+                individuals rather than housing, financial, and food insecurity.
+                Its important that I set a precedent in how I keep myself
+                accountable with the support of my constituents and peers. I
+                will always be transparent and upfront with my constituents so
+                that they are in the loop and updated on what is going on. I
+                will be truthful and open to any suggestions brought to me by
+                other community members. I will work on providing ways that will
+                help continue and bring intergenerational relationships in our
+                communities.
               </p>
               <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
+                See, even at a young age especially growing up in Mattapan I had
+                a deep understanding of racial disparities in Black and Brown
+                communities like mine. As an Elementary school student, I worked
+                tirelessly with my friends and cousins to prevent the beloved
+                lower mills library from closing down, and when I went to the
+                Mattapan Library, I saw kids who looked like me get the police
+                called on them unnecessarily. In the fourth grade, I watched as
+                black and brown kids get thrown into paddy wagons for having
+                mental health breakdowns.
               </p>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                Even at ten years old, I was being taught the dangers of being
+                Black in this world. These experiences, and more, have shaped
+                who I am and what I believe in. I know that I do not hold these
+                experiences alone and that many others in my district have
+                stories just like this. District 4 deserves better! We deserve
+                to have a public high school in Mattapan, We deserve to have
+                stable housing, we deserve safety, we deserve to have access to
+                healthy foods, we deserve to breathe clean air and we deserve to
+                be listened to when community demands are made. We deserve
+                better.
               </p>
             </div>
           </div>
@@ -76,38 +106,41 @@
       <section id="three" class="main style1 special">
         <div class="container">
           <header class="major">
-            <h2>The Issues</h2>
+            <h2>Our Vision</h2>
           </header>
-          <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+          <p>
+            I plan on bringing my perspective and energy as a young Black woman
+            to city hall. We have an opportunity to set new precedents with this
+            campaign and envision change on the horizon.
+          </p>
           <div class="row gtr-150">
             <div class="col-4 col-12-medium">
               <span class="image fit"
                 ><img src="images/pic02.jpg" alt=""
               /></span>
-              <h3 class="issue_header">Magna feugiat lorem</h3>
+              <h3 class="issue_header">Public Peace</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Reimagining public safety, and creating goals and expectations
+                to promote and sustain peace in the community.
               </p>
             </div>
             <div class="col-4 col-12-medium">
               <span class="image fit"
                 ><img src="images/pic03.jpg" alt=""
               /></span>
-              <h3 class="issue_header">Magna feugiat lorem</h3>
+              <h3 class="issue_header">Imagining Food Abundance</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Reimagining food access to meet the needs of community members
+                and also build locally sustained economies.
               </p>
             </div>
             <div class="col-4 col-12-medium">
               <span class="image fit"
                 ><img src="images/pic04.jpg" alt=""
               /></span>
-              <h3 class="issue_header">Magna feugiat lorem</h3>
+              <h3 class="issue_header">Transparency and Accountability</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Reimagining the relationship between government and communities.
               </p>
             </div>
             <ul class="actions special">
@@ -123,13 +156,12 @@
       <section id="four" class="main style2 special">
         <div class="container">
           <header class="major">
-            <h2>Want to get involved?</h2>
+            <h2>WANT TO GET INVOLVED?</h2>
           </header>
-          <p>Sed lacus nascetur ac ante amet sapien.</p>
           <ul class="actions special">
+            <li><a href="#" class="button wide primary">Donate</a></li>
+            <li><a href="#" class="button wide">Become an organizer</a></li>
             <li><a href="#" class="button wide primary">Contact Us</a></li>
-            <li><a href="#" class="button wide">Sign Up for Newsletter</a></li>
-              <li><a href="#" class="button wide primary">Contact Us</a></li>
           </ul>
         </div>
       </section>
@@ -183,12 +215,9 @@ export default {
     NavBar,
     Header,
   },
+  props: {
 
-  data() {
-    return {
-      image: "../assets/css/images/home-title-card.png",
-    };
-  },
+  }
 };
 </script>
 
@@ -216,8 +245,8 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color:#8b0c0e;
-  color:white !important;
+  background-color: #8b0c0e;
+  color: white !important;
 }
 .main.style2 h2 {
   color: #ea8700 !important;
