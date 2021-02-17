@@ -25,40 +25,18 @@ export default {
   background-attachment: fixed;
   background-position: 0px 15px;
 }
-@media (min-width: 1999px) and (max-width: 2122px) {
+@media (min-width: 300px) and (max-width: 900px) {
   #header {
-    height:70vh;
-    background-image: url('../assets/css/images/home-title-card.png');
+    height:42vh;
+    width:100%;
+    background-image: url('../assets/css/images/mobiletitlecard.svg');
     -webkit-background-size: contain;
     -moz-background-size: contain;
-    -o-background-size: contain;
+    -o-background-size: cover;
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: 0px 55px;
-  }
-}
-@media (min-width: 1682px) and (max-width: 1998px) {
-  #header {
-    height:58vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 55px;
-  }
-}
-  @media (min-width: 1682px) and (max-width: 1998px) {
-  #header {
-    height:58vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 55px;
+    background-position: 0px 82px;
+    box-shadow: none;
   }
 }
 
@@ -66,7 +44,7 @@ export default {
   #header {
     height:30vh;
     width:100%;
-    background-image: url('../assets/css/images/mobilefoodabun.svg');
+    background-image: url('../assets/css/images/mobiletitlecard.svg');
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: cover;
@@ -92,18 +70,56 @@ export default {
     box-shadow: none;
   }
 }
-@media (min-width: 300px) and (max-width: 900px) {
+@media (min-width: 1325px) and (max-width: 1460px){
   #header {
-    height:58vh;
-    width:100%;
-    background-image: url('../assets/css/images/mobilefoodabun.svg');
+    height:90vh;
+    background-image: url('../assets/css/images/home-title-card.png');
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: cover;
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: 0px 75px;
+    background-position: 0px 85px;
     box-shadow: none;
+  }
+}
+
+@media (min-width: 1682px) and (max-width: 1998px) {
+  #header {
+    height:58vh;
+    background-image: url('../assets/css/images/home-title-card.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0px 55px;
+  }
+}
+
+@media (min-width: 1999px) and (max-width: 2122px) {
+  #header {
+    height:70vh;
+    background-image: url('../assets/css/images/home-title-card.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0px 55px;
+  }
+}
+
+@media (min-width: 1999px) and (max-width: 2122px) {
+  #header {
+    height:70vh;
+    background-image: url('../assets/css/images/home-title-card.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0px 55px;
   }
 }
 </style>

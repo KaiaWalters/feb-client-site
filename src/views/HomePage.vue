@@ -120,7 +120,7 @@
           <div class="row gtr-150">
             <div class="col-4 col-12-medium">
               <span class="image fit"
-                ><img src="../assets/css/images/peace.png" alt=""
+                ><img src="../assets/css/images/peace.svg" alt=""
               /></span>
               <h3 class="issue_header">Public Peace</h3>
               <p>
@@ -130,7 +130,7 @@
             </div>
             <div class="col-4 col-12-medium">
               <span class="image fit"
-                ><img src="../assets/css/images/food.png" alt=""
+                ><img src="../assets/css/images/food.svg" alt=""
               /></span>
               <h3 class="issue_header">Imagining Food Abundance</h3>
               <p>
