@@ -6,7 +6,7 @@
       <router-link @click="toggleNavMenu()" :to="{name:'Home'}">MEET NIKKIA</router-link>
       <router-link @click="toggleNavMenu()" :to="{name:'Issues'}">ISSUES</router-link>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbAr151anh7MYOuYqnFH14b3n9S1H7NpVzTN-EMiLKjrJcGQ/viewform?usp=pp_url">JOIN US</a>
-      <a class="highlight" href="#">DONATE</a>
+      <a class="highlight" href="https://secure.actblue.com/donate/nikkia4boston">DONATE</a>
     </ul>
   </div>
 </template>

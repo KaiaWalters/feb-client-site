@@ -1,4 +1,5 @@
-<div class="Issue">
+<template>
+    <div class="Issue">
         <p>Food abundance is being able to think about your passions instead of your next meal. Food abundance is security and safety in knowing you have access to healthy and nutritious food at home, school, and work. House-less people need access to healthy and nutritious food, undocumented folks need access to healthy and nutritious food, and incarcerated folks need access to healthy and nutritious food. The key to my plan is supporting policies and urban planning that bolster local food economies and free food programming while innovating more sustainable production systems.</p>
 
         <ul class="main-points">
@@ -23,3 +24,10 @@
                 </ul>
         </ul>
     </div>
+</template>
+
+<script>
+    export default {
+       name: 'FoodAbundance'
+    }
+</script>

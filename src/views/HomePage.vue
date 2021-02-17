@@ -21,7 +21,7 @@
                 deserve to breathe clean air and we deserve to be listened to
                 when community demands are made. We deserve better.
               </p>
-              <a href="#one" class="button primary">Learn More</a>
+              <router-link :to="{name:'Issues'}"><a href="#" class="button primary">Learn More</a></router-link>
             </div>
             <div class="col-6 col-12-medium imp-medium">
               <span class="image fit"
@@ -161,9 +161,9 @@
             <h2>WANT TO GET INVOLVED?</h2>
           </header>
           <ul class="actions special">
-            <li><a href="#" class="button wide primary">Donate</a></li>
-            <li><a href="#" class="button wide">Become an organizer</a></li>
-            <li><a href="#" class="button wide primary">Contact Us</a></li>
+            <li><a href="https://secure.actblue.com/donate/nikkia4boston" class="button wide primary">Donate</a></li>
+            <li><a href="https://actionnetwork.org/forms/become-a-campaign-organizer" class="button wide">Become an organizer</a></li>
+            <li><a href="mailto:nikkiajeancharles@gmail.com" class="button wide primary">Contact Us</a></li>
           </ul>
         </div>
       </section>
