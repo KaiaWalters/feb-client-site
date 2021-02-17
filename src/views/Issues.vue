@@ -2,7 +2,7 @@
   <div>
     <body class="is-preload">
       <NavBar/>
-      <section v-if="this.selectedIssue.id == 3" id="headerThree"></section>
+      <section   v-if="this.selectedIssue.id == 3" id="headerThree"></section>
       <section v-else-if="this.selectedIssue.id == 2" id="headerTwo"></section>
       <section v-else id="headerOne"></section>
       <!-- One -->
@@ -16,7 +16,7 @@
                 >Transparency &amp; Accountability</a>
            <a @click="displayIssue('two')" href="#" class="button wide">Food Abundance</a>
            <a @click="displayIssue('three')" href="#" class="button wide"
-                >Public Safety</a>
+                >Public Peace</a>
           </ul>
         </div>
 
@@ -150,7 +150,6 @@ export default {
           this.selectedIssue = this.content.three;
           break;
       }
-      console.log("fuck", issue, "selected", this.selectedIssue);
     },
   },
 };
@@ -163,6 +162,7 @@ export default {
 .container {
   color: #b70a0c;
   padding: 25px; 
+  padding: 1em;
 }
 .major h2 {
   color: #b70a0c !important;
@@ -184,7 +184,6 @@ export default {
 }
 
 .button.wide {
-  width: 500px; 
   border: 2px solid #ea8700;
   background-color: white; 
   color: #ea8700 !important;
@@ -227,12 +226,40 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 0px 40px;
 }
 .container {
   text-align: left;
 }
 .major {
   text-align: center !important;
+}
+@media screen and (min-width: 990px) {
+  .button.wide {
+    width: 500px; 
+  }
+}
+@media (min-width:540px) and (max-width: 940px) {
+  .button.wide {
+    width: 480px; 
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1682px) and (max-width: 1998px) {
+  #headerOne, #headerTwo, #headerThree {
+    height:58vh;
+    background-image: url('../assets/css/images/home-title-card.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0px 55px;
+  }
 }
 </style>
 

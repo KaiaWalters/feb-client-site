@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color:'red';">
     <NavMobile v-if="mobileview"/>
     <div v-if="!mobileview" id="navbar">
         <router-link style="padding:0px;" :to="{name:'Home'}"><img id="logo" src="../assets/css/images/logo.svg" alt="Nikia Campaign Logo"></router-link>

@@ -49,6 +49,10 @@ export default {
       background-color: #f6efd8 !important;
       padding: 30px !important;
       display: flex;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
   }
 
   .showMenu {
@@ -75,10 +79,6 @@ export default {
     padding:0px;
     padding-top:30px;
     margin: 0px;
-  }
-
-  #navigation-mobile {
-    padding: 20px 0 0 0;
   }
 
   #navigation-mobile .highlight {
