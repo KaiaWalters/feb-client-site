@@ -3,8 +3,8 @@
     <i @click="toggleNavMenu()" class="fas fa-bars"></i>
     <h1 v-if="isActive">NIKKIA JEAN-CHARLES</h1>
     <ul v-bind:class="[isActive ? 'hideMenu' : 'showMenu']">
-      <router-link :to="{name:'Home'}">MEET NIKKIA</router-link>
-      <router-link :to="{name:'Issues'}">ISSUES</router-link>
+      <router-link @click="toggleNavMenu()" :to="{name:'Home'}">MEET NIKKIA</router-link>
+      <router-link @click="toggleNavMenu()" :to="{name:'Issues'}">ISSUES</router-link>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbAr151anh7MYOuYqnFH14b3n9S1H7NpVzTN-EMiLKjrJcGQ/viewform?usp=pp_url">JOIN US</a>
       <a class="highlight" href="#">DONATE</a>
     </ul>
@@ -15,8 +15,8 @@
 export default {
   name: "NavMobile", 
   data: () => {
-    return {
-      isActive: false
+    return {  
+      isActive: true
     }
   },
   methods: {

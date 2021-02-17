@@ -27,14 +27,12 @@ export default {
   }, 
   data:() => {
     return {
-      mobileview: false,
-      showNav: false
+      mobileview: false
     }
   },
   methods: {
     handleview() {
       this.mobileview = window.innerWidth < 990; 
-      console.log("CALLED")
     }
   },
   created() {
