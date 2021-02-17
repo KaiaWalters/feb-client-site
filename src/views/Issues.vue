@@ -249,7 +249,7 @@ export default {
     align-items: center;
   }
 }
-@media (min-width: 1682px) and (max-width: 1998px) {
+/* @media (min-width: 1682px) and (max-width: 1998px) {
   #headerOne, #headerTwo, #headerThree {
     height:58vh;
     background-image: url('../assets/css/images/home-title-card.png');
@@ -259,8 +259,8 @@ export default {
     background-size:contain;
     background-repeat: no-repeat;
     background-position: 0px 55px;
-  }
-}
+    }
+  } */
 </style>
 
 
