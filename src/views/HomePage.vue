@@ -38,7 +38,7 @@
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
               <ul class="major-icons">
-                <li style="padding-top: 0px !important;"><img  src="../assets/css/images/n-main.jpg" alt="" /></li>
+                  <li style="padding-top: 0px !important;"><img  src="../assets/css/images/n-main.jpg" alt="" /></li>
                  <li style="padding-top: 0px !important;"><img src="../assets/css/images/nikkiaflagpole.jpg" alt="" /></li>
               </ul>
             </div>
@@ -277,5 +277,24 @@ header.major:after {
 }
 .open {
   transform: translateY(300px);
+}
+@media screen and (max-width:980px) {
+  .major-icons li:first-child {
+    display: none;
+  }
+  .actions.special {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .actions.special li {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 8px;
+  }
+
 }
 </style>

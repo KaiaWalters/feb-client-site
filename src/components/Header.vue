@@ -25,9 +25,9 @@ export default {
   background-attachment: fixed;
   background-position: 0px 15px;
 }
-@media (min-width: 300px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   #header {
-    height:42vh;
+    height:44vh;
     width:100%;
     background-image: url('../assets/css/images/mobiletitlecard.svg');
     -webkit-background-size: contain;
@@ -35,91 +35,49 @@ export default {
     -o-background-size: cover;
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: 0px 82px;
-    box-shadow: none;
+    background-position: 0px 90px;
   }
 }
 
-@media (min-width: 1016px) and (max-width: 1146px) {
+@media (min-width: 411px) and (max-width: 980px) {
   #header {
-    height:30vh;
-    width:100%;
-    background-image: url('../assets/css/images/mobiletitlecard.svg');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: cover;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 85px;
-    box-shadow: none;
+    background-position: 0px 100px;
+    height:25vh;
+  }
+}
+/* dont touch me!!!! */
+@media  screen and (max-width: 378px) {
+  #header {
+    background-position: 0px 100px;
+    height:28.5vh;
   }
 }
 
-/* @media (min-width: 1016px) and (max-width: 1146px) { */
-@media (min-width: 1146px) and (max-width: 1320px) {
-  #header {
-    height:62vh;
-    width:100%;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: cover;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 85px;
-    box-shadow: none;
-  }
-}
-@media (min-width: 1325px) and (max-width: 1460px){
-  #header {
-    height:90vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: cover;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 85px;
-    box-shadow: none;
+@media (max-width:768px) {
+   #header {
+    background-position: 0px 100px;
+    height:37vh;
   }
 }
 
-@media (min-width: 1682px) and (max-width: 1998px) {
+@media  (max-width: 375px) {
   #header {
-    height:58vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 55px;
+    background-position: 0px 100px;
+    height:22.75vh;
   }
 }
 
-@media (min-width: 1999px) and (max-width: 2122px) {
+@media (min-width: 901px) and (max-width: 1024px) {
   #header {
-    height:70vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 55px;
+    background-position: 0px 100px;
+    height:30.5vh;
   }
 }
 
-@media (min-width: 1999px) and (max-width: 2122px) {
+/* @media (min-width: 1025px) and (max-width: 1824px) {
   #header {
-    height:70vh;
-    background-image: url('../assets/css/images/home-title-card.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 0px 55px;
+    background-position: 0px 100px;
+    height:40.5vh;
   }
-}
+} */
 </style>
