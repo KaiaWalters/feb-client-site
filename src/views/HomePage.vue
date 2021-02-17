@@ -180,20 +180,20 @@
               ><span class="label">Twitter</span></a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="https://www.instagram.com/nikkia4boston/"
               class="icon brands alt fa-facebook-f"
               ><span class="label">Facebook</span></a
             >
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="icon brands alt fa-instagram"
+            <a href="https://www.instagram.com/nikkia4boston/" class="icon brands alt fa-instagram"
               ><span class="label">Instagram</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon solid alt fa-envelope"
+            <a href="mailto:nikkiajeancharles@gmail.com" class="icon solid alt fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>

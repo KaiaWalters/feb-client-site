@@ -33,25 +33,28 @@
         <div>
           <span>Stay connected with Nikkia</span>
         </div>
-
-        <ul class="icons">
+         <ul class="icons">
           <li>
-            <a href="#" class="icon brands alt fa-twitter"
+            <a
+              href="https://twitter.com/Nikkia4Boston"
+              class="icon brands alt fa-twitter"
               ><span class="label">Twitter</span></a
             >
           </li>
-          <li>
-            <a href="#" class="icon brands alt fa-facebook-f"
+          <!-- <li>
+            <a
+              href="https://www.instagram.com/nikkia4boston/"
+              class="icon brands alt fa-facebook-f"
               ><span class="label">Facebook</span></a
             >
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="icon brands alt fa-instagram"
+            <a href="https://www.instagram.com/nikkia4boston/" class="icon brands alt fa-instagram"
               ><span class="label">Instagram</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon solid alt fa-envelope"
+            <a href="mailto:nikkiajeancharles@gmail.com" class="icon solid alt fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
