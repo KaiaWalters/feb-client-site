@@ -1,38 +1,20 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import VueMq from 'vue-mq'
 import App from './App.vue'
+import router from './router'
 
 require('/src/assets/css/noscript.css');
 require('/src/assets/css/main.css');
-
-import HomePage from './components/HomePage.vue'
-import Issues from './components/Issues.vue'
-
-const routes = [
-  { path: '/home', component: HomePage },
-  { path: '/issues', component: Issues }
-]
-
-// 3. Create the router instance and pass the `routes` option
-// You can pass in additional options here, but let's
-// keep it simple for now.
-const router = new VueRouter({
-  routes // short for `routes: routes`
-})
-
-// 4. Create and mount the root instance.
-// Make sure to inject the router with the router option to make the
-// whole app router-aware.
-
-Vue.use(VueRouter)
-Vue.config.productionTip = false
 
 new Vue({
   router,
   render: h => h(App),
 }).$mount('#app')
 
-
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
+Vue.use(VueMq, {
+  breakpoints: {
+    mobile: 450,
+    tablet: 1250,
+    desktop: Infinity,
+  }
+})

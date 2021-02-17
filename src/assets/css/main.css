@@ -119,11 +119,14 @@ input, select, textarea {
 /* HEADER TEST */
 
 .inner h1 {
-	font-family: Open Sans Hebrew Condensed Bold;
+	/* /font needs to change */
+	font-family: Open Sans Hebrew Condensed Bold !important;
+	
 
 }
 #issues .major {
-	font-family: Open Sans Hebrew Condensed Bold;
+	/* /font needs to change */
+	font-family: 'Open Sans Condensed', sans-serif !important;
 }
 .ml3 {
 	font-weight: 900;
@@ -225,7 +228,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: Open Sans Hebrew Condensed Light;
+		font-family: 'Open Sans Condensed', sans-serif !important;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -3040,7 +3043,7 @@ input, select, textarea {
 					.main.style2 input[type="button"].primary:hover,
 					.main.style2 button.primary:hover,
 					.main.style2 .button.primary:hover {
-						background-color: rgba(255, 255, 255, 0.125) !important;
+						background-color:#8b0c0e !important;
 						color: #ffffff !important;
 					}
 
@@ -3310,7 +3313,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 6em 0 ;
+		padding: 4em 0 4em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;

@@ -1,10 +1,11 @@
 <template>
-  <div class="hello">
-    <div id="navbar">
-         <router-link to="/home"><img id="logo" src="../assets/css/images/logo.svg" alt="Nikia Campaign Logo"></router-link>
+  <div>
+    <NavMobile v-if="mobileview"/>
+    <div v-if="!mobileview" id="navbar">
+        <router-link style="padding:0px;" :to="{name:'Home'}"><img id="logo" src="../assets/css/images/logo.svg" alt="Nikia Campaign Logo"></router-link>
         <div id="navbar-right">
-             <router-link to="/home">MEET JANE</router-link>
-             <router-link to="/issues">ISSUES</router-link>
+             <router-link :to="{name:'Home'}">MEET NIKKIA</router-link>
+             <router-link :to="{name:'Issues'}">ISSUES</router-link>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbAr151anh7MYOuYqnFH14b3n9S1H7NpVzTN-EMiLKjrJcGQ/viewform?usp=pp_url">JOIN US</a>
             <a class="highlight" href="#">DONATE</a>
         </div>
@@ -14,13 +15,34 @@
 
 <script>
 //import navbarMin from "client-site/src/navbarminimize.js"
+import NavMobile from "./NavMobile.vue";
+
 export default {
   name: 'NavBar',
+  components: {
+    NavMobile
+  },
   props: {
     msg: String
   }, 
- mounted() {
+  data:() => {
+    return {
+      mobileview: false,
+      showNav: false
+    }
+  },
+  methods: {
+    handleview() {
+      this.mobileview = window.innerWidth < 990; 
+      console.log("CALLED")
+    }
+  },
+  created() {
+    this.handleview()
+  },
+  mounted() {
       this.$nextTick(function(){
+      if(window.innerWidth > 990) {
         window.addEventListener("scroll", function(){
           var navbar = document.getElementById("navbar")
           var logo = this.document.getElementById("logo")
@@ -39,6 +61,7 @@ export default {
             }
           }
         })
+        }
       })
     },
 }
@@ -57,7 +80,7 @@ export default {
     }
 
     #navbar {
-        background-color:#f6efd8 !important;
+        background-color: #f6efd8 !important;
         padding: 20px !important; 
     }
 
@@ -73,12 +96,14 @@ export default {
     }
 
     #logo.shrinkLogo {
-      height: 15px;
-      width: 15px;
+      height: 40px;
+      width: 100px;
+      margin-top: 15px;
     }
 
     #logo {
-      height: 40px;
-      width: 40px;
+     height: 60px;
+     width: 125px;
+     margin-bottom: 10px;
     }
 </style>

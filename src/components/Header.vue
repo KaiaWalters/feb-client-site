@@ -14,7 +14,8 @@ export default {
 @import "/src/assets/css/noscript.css";
 
 #header {
-  height:480px;
+  height:70vh;
+  width:100%;
   background-image: url('../assets/css/images/home-title-card.png');
   -webkit-background-size: contain;
   -moz-background-size: contain;
