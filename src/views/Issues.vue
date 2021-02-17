@@ -15,7 +15,7 @@
         <div class="container">
           <ul class="actions">
            <a @click="displayIssue('one')" href="#" class="button wide"
-                >Transparency &amp; Accountability</a>
+                >Transparency</a>
            <a @click="displayIssue('two')" href="#" class="button wide">Food Abundance</a>
            <a @click="displayIssue('three')" href="#" class="button wide"
                 >Public Peace</a>
@@ -127,9 +127,11 @@ export default {
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: black;
+  color: #680708;
   padding: 25px; 
   padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75em;
 }
 #issues{
   margin-top: 85px;

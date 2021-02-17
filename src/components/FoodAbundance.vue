@@ -40,7 +40,7 @@
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: black;
+  color: #b70a0c;
   padding: 25px; 
   padding: 1em;
 }
@@ -58,7 +58,7 @@ p, b {
   font-weight: bold !important;
 }
 ul {
-  margin-left: 20px;
+ margin-left: 20px;
   width: 80%;
 }
 </style>
