@@ -2,10 +2,12 @@
   <div>
     <body class="is-preload">
       <NavBar/>
-      <section v-if="this.selectedIssue.id == 3" id="headerThree"></section>
-      <section v-else-if="this.selectedIssue.id == 2" id="headerTwo"></section>
-      <section v-else id="headerOne"></section>
-      <!-- One -->
+      <!-- <section v-if="!hide">
+        <section v-if="this.selectedIssue.id == 3" id="headerThree"></section>
+        <section v-else-if="this.selectedIssue.id == 2" id="headerTwo"></section>
+        <section v-else id="headerOne"></section> 
+      </section> -->
+      
       <section id="issues" class="main style1 special">
         <header class="major">
           <h2 style="color:white !important;">Our Vision</h2>
@@ -91,6 +93,7 @@ export default {
           id: 3
         },
       },
+      hide: false
     };
   },
   methods: {
@@ -107,6 +110,14 @@ export default {
           break;
       }
     },
+    hideBanners: function () {
+       if(window.innerWidth < 1300) {
+         this.hide = true;
+       }
+    },
+    created: function () {
+      this.hideBanners()
+    }
   },
 };
 </script>
@@ -116,13 +127,17 @@ export default {
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: #b70a0c;
+  color: black;
   padding: 25px; 
   padding: 1em;
 }
-.major h2 {
-  color: #b70a0c !important;
+#issues{
+  margin-top: 85px;
 }
+.main.style1.special h2 {
+ color: black !important;
+}
+
 .hidden {
   display: none;
 }

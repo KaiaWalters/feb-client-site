@@ -223,7 +223,25 @@ export default {
 <style scoped>
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
+@font-face {
+  font-family: "Hebrew Sans Bold";
+  src:
+  url("/./../../OpenSansHebrewCondensed-Bold.ttf") format(".tff")
+}
+@font-face {
+  font-family: "Hebrew Sans Light";
+  src:
+  url("/./../../OpenSansHebrewCondensed-Light.ttf") format(".tff")
+}
 
+
+body {
+  background-color: #fff9d6;
+  font-family: "Hebrew Sans Light" !important;
+}
+.m13 {
+  font-family: "Hebrew Sans Bold" !important;
+}
 .button.primary {
   background-color: white;
   box-shadow: none !important;
@@ -248,6 +266,7 @@ button.primary:active,
 }
 .main.style2 h2 {
   color: #ea8700 !important;
+  font-family: "Hebrew Sans Bold" !important;
 }
 .main.style2 header.major:after {
   background-color: #ea8700;

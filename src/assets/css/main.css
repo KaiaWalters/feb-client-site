@@ -120,8 +120,7 @@ input, select, textarea {
 
 .inner h1 {
 	/* /font needs to change */
-	font-family: Open Sans Hebrew Condensed Bold !important;
-	
+	font-family: "Hebrew Sans Bold" !important;
 
 }
 #issues .major {

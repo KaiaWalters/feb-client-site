@@ -38,6 +38,7 @@ export default {
       color: #ea8700; 
       font-weight: bold;
       margin: 0px;
+      font-size: 1.5em;
   }
 
   i {

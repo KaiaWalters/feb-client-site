@@ -73,11 +73,4 @@ export default {
     height:30.5vh;
   }
 }
-
-/* @media (min-width: 1025px) and (max-width: 1824px) {
-  #header {
-    background-position: 0px 100px;
-    height:40.5vh;
-  }
-} */
 </style>
