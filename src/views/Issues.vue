@@ -130,12 +130,18 @@ export default {
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: #680708;
+  color:black;
+  /* color: #680708; */
   padding: 25px; 
   padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans";
   font-size: .75em;
 }
+
+.major h2 {
+  font-family: "Josefin Sans" !important;
+}
+
 #issues{
   margin-top: 85px;
 }
@@ -163,11 +169,12 @@ export default {
   border: 2px solid #ea8700;
   background-color: white; 
   color: #ea8700 !important;
+  font-family: "Josefin Sans" !important;
 }
 .button.wide:hover{
-  background-color: #b70a0c;
+  background-color: #8b0c0e;
   color: white !important;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 #headerOne {

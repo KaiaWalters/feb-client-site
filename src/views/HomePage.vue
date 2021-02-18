@@ -119,19 +119,24 @@
           </p>
           <div class="row gtr-150">
             <div class="col-4 col-12-medium">
-              <span class="image fit"
-                ><img src="../assets/css/images/peace.svg" alt=""
-              /></span>
+              <router-link :to="{name:'Issues'}">
+                  <span class="image fit"
+                  ><img src="../assets/css/images/peace.svg" alt=""
+                /></span>
+              </router-link>
               <h3 class="issue_header">Public Peace</h3>
               <p>
                 Reimagining public safety, and creating goals and expectations
                 to promote and sustain peace in the community.
               </p>
             </div>
+            <!-- here -->
             <div class="col-4 col-12-medium">
-              <span class="image fit"
+              <router-link :to="{name:'Issues'}">
+                <span class="image fit"
                 ><img src="../assets/css/images/food.svg" alt=""
               /></span>
+              </router-link>
               <h3 class="issue_header">Imagining Food Abundance</h3>
               <p>
                 Reimagining food access to meet the needs of community members
@@ -139,9 +144,11 @@
               </p>
             </div>
             <div class="col-4 col-12-medium">
-              <span class="image fit"
+               <router-link :to="{name:'Issues'}">
+                <span class="image fit"
                 ><img src="../assets/css/images/transparency.svg" alt=""
               /></span>
+              </router-link>
               <h3 class="issue_header">Transparency and Accountability</h3>
               <p>
                 Reimagining the relationship between government and communities.
@@ -199,7 +206,7 @@
           </li>
         </ul>
         <ul class="copyright">
-          <li>&copy; Paid for by the Committee to Elect Nikkia Charles</li>
+          <li>&copy;Paid for by the Jean-Charles Committee</li>
           <li><a href="https://www.linkedin.com/in/kaiawalters/">Developed by Kaia Walters</a></li>
         </ul>
       </section>
@@ -221,7 +228,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import "/src/assets/css/main.css";
+/* @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 @font-face {
   font-family: "Hebrew Sans Bold";
@@ -232,20 +239,21 @@ export default {
   font-family: "Hebrew Sans Light";
   src:
   url("/./../../OpenSansHebrewCondensed-Light.ttf") format(".tff")
-}
+} */
 
 
 body {
   background-color: #fff9d6;
-  font-family: "Hebrew Sans Light" !important;
+  font-family: "Open Sans" !important;
 }
 .m13 {
-  font-family: "Hebrew Sans Bold" !important;
+  font-family: "Open Sans" !important;
 }
 .button.primary {
   background-color: white;
   box-shadow: none !important;
   color: #ea8700 !important;
+  font-family: "Josefin Sans" !important;
 }
 input[type="submit"].primary:hover,
 input[type="reset"].primary:hover,
@@ -264,9 +272,12 @@ button.primary:active,
   background-color: #8b0c0e;
   color: white !important;
 }
+.major h2 {
+  font-family: "Josefin Sans" !important;
+}
 .main.style2 h2 {
   color: #ea8700 !important;
-  font-family: "Hebrew Sans Bold" !important;
+  font-family: "Josefin Sans" !important;
 }
 .main.style2 header.major:after {
   background-color: #ea8700;
@@ -275,6 +286,7 @@ button.primary:active,
   background-color: #ea8700;
   box-shadow: inset 0 0 0 1px #ffffff !important;
   color: white !important;
+  font-family: "Josefin Sans" !important;
 }
 .main.style2 .button {
   box-shadow: inset 0 0 0 1px #ea8700;

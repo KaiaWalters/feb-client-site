@@ -80,6 +80,7 @@ export default {
     #navbar {
         background-color: #f6efd8 !important;
         padding: 20px !important; 
+        font-family: "Josefin Sans" !important;
     }
 
     #navbar-right a {

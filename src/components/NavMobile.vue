@@ -48,6 +48,7 @@ export default {
 
   #navigation-mobile {
       background-color: #f6efd8 !important;
+      font-family: "Josefin Sans" !important;
       padding: 30px !important;
       display: flex;
       position: fixed;
