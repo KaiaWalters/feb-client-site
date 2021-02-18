@@ -87,4 +87,7 @@ ul {
   margin-right: 20px;
   width: 80%;
 }
+a {
+  color: blue;
+}
 </style>

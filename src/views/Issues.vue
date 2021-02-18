@@ -22,7 +22,7 @@
           </ul>
         </div>
 
-       <div class="container" style="background-color: #f6efd8">
+       <div class="container" style="background-color: #f6efd8; padding: 30px;">
          <PublicPeace v-if="this.selectedIssue.id == 3"/>
          <FoodAbundance v-else-if="this.selectedIssue.id == 2"/>
          <Transparency v-else/>
@@ -131,11 +131,10 @@ export default {
 @import "/src/assets/css/noscript.css";
 .container {
   color:black;
-  /* color: #680708; */
-  padding: 25px; 
   padding: 1em;
   font-family: "Open Sans";
   font-size: .75em;
+  width:90%;
 }
 
 .major h2 {
@@ -144,6 +143,7 @@ export default {
 
 #issues{
   margin-top: 85px;
+  padding:40px;
 }
 .main.style1.special h2 {
  color: black !important;
@@ -217,6 +217,7 @@ export default {
 .major {
   text-align: center !important;
 }
+
 @media screen and (min-width: 990px) {
   .button.wide {
     width: 500px; 

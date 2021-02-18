@@ -296,7 +296,7 @@ header.major:after {
   background-color: white;
 }
 #footer {
-  background-color: #b70a0c !important;
+  background-color:#8b0c0e !important;
   background-image: none;
   color: white;
 }
