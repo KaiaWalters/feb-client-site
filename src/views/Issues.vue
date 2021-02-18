@@ -139,6 +139,7 @@ export default {
 
 .major h2 {
   font-family: "Josefin Sans" !important;
+  margin-top: 1em;
 }
 
 #issues{
