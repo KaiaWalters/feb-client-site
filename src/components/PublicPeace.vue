@@ -88,6 +88,6 @@ ul {
   width: 80%;
 }
 a {
-  color: blue;
+  color: #b70a0c;
 }
 </style>
