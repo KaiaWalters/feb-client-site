@@ -326,10 +326,6 @@ header.major:after {
 #footer {
   background-color:#8b0c0e !important;
   background-image: none;
-  color: white;
-}
-.icons {
-  color: white;
 }
 #one {
   padding-bottom: 2em;
@@ -359,7 +355,7 @@ header.major:after {
 #myBtn i {
   height: 20px; 
   width: 35px;
-  color:#ea8700;
+  color:white;
 }
 #myBtn {
   display: none;
@@ -367,7 +363,7 @@ header.major:after {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  background-color: #fcda02;
+  background-color:#ea8700;
   border: 2px solid #ea8700;
   color: white;
   cursor: pointer;
@@ -376,7 +372,7 @@ header.major:after {
 }
 
 #myBtn:hover {
-  background-color:#ea8700;
+  background-color:#fcda02;
   border: 2px solid white; 
 }
 #myBtn i:hover {
