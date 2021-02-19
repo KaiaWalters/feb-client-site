@@ -6,6 +6,10 @@
       <!-- One -->
       <section id="one" class="main style1">
         <div class="container">
+          <!-- here -->
+          <button @click="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+          </button>
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
               <header class="major">
@@ -222,6 +226,30 @@ export default {
   components: {
     NavBar,
     Header,
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll (event) {
+       this.scrollFunction()
+       console.log(event)
+    },
+    scrollFunction: function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  },
+    // When the user clicks on the button, scroll to the top of the document
+    topFunction: function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   }
 };
 </script>
@@ -327,5 +355,31 @@ header.major:after {
     margin-top: 8px;
   }
 
+}
+#myBtn i {
+  height: 20px; 
+  width: 35px;
+  color:#ea8700;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #fcda02;
+  border: 2px solid #ea8700;
+  color: white;
+  cursor: pointer;
+  padding: 5px; 
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color:#ea8700;
+  border: 2px solid white; 
+}
+#myBtn i:hover {
+  color:white; 
 }
 </style>
