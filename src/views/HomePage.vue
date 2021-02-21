@@ -51,8 +51,7 @@
                 <h2>
                   "As a community organizer, survivor, and longtime resident of
                   District 4, I wanted to create a campaign that is framed by my
-                  lived experiences. Born from a Haitian Immigrant family I
-                  value accessibility, safety, and love."
+                  lived experiences."
                 </h2>
               </header>
               <p>
@@ -179,41 +178,7 @@
         </div>
       </section>
       <!-- Footer -->
-      <section id="footer">
-        <div>
-          <span>Stay connected with Nikkia</span>
-        </div>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://twitter.com/Nikkia4Boston"
-              class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <!-- <li>
-            <a
-              href="https://www.instagram.com/nikkia4boston/"
-              class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li> -->
-          <li>
-            <a href="https://www.instagram.com/nikkia4boston/" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="mailto:nikkiajeancharles@gmail.com" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy;Paid for by the Jean-Charles Committee</li>
-          <li><a href="https://www.linkedin.com/in/kaiawalters/">Developed by Kaia Walters</a></li>
-        </ul>
-      </section>
+      <Footer/>
     </body>
   </div>
 </template>
@@ -221,11 +186,13 @@
 <script>
 import Header from "../components/Header.vue";
 import NavBar from "../components/NavBar.vue";
+import Footer from "../components/Footer.vue"
 export default {
   name: "HomePage",
   components: {
     NavBar,
     Header,
+    Footer
   },
   created () {
     window.addEventListener('scroll', this.handleScroll);
@@ -300,6 +267,9 @@ button.primary:active,
   background-color: #8b0c0e;
   color: white !important;
 }
+.button.wide:hover{
+  background-color: #ffffff !important;
+}
 .major h2 {
   font-family: "Josefin Sans" !important;
 }
@@ -322,10 +292,6 @@ button.primary:active,
 }
 header.major:after {
   background-color: white;
-}
-#footer {
-  background-color:#8b0c0e !important;
-  background-image: none;
 }
 #one {
   padding-bottom: 2em;

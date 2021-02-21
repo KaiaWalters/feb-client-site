@@ -65,10 +65,15 @@ export default {
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: black;
+  color: black !important;
   padding: 25px; 
   padding: 1em;
 }
+
+b{
+  color: black !important;
+}
+
 #issues{
   margin-top: 85px;
 }

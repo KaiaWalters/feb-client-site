@@ -44,6 +44,10 @@
   padding: 25px; 
   padding: 1em;
 }
+
+b{
+  color: black !important;
+}
 #issues{
   margin-top: 85px;
 }

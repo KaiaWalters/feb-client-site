@@ -40,10 +40,15 @@
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
 .container {
-  color: #b70a0c;
+  color: black !important;
   padding: 25px; 
   padding: 1em;
 }
+
+b{
+  color: black !important;
+}
+
 #issues{
   margin-top: 85px;
 }
@@ -64,4 +69,9 @@ ul {
 a {
   color: #b70a0c;
 }
+
+b{
+  color: black !important;
+}
+
 </style>

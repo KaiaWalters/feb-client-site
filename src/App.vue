@@ -6,14 +6,6 @@
 
 
 <style>
-@font-face {
-  font-family: "Hebrew Sans Bold";
-  src:
-  url("/./../../OpenSansHebrewCondensed-Bold.ttf") format(".tff"),
-  url("/./../../OpenSansHebrewCondensed-BoldItalic.ttf") format(".tff"),
-  url("/./../../OpenSansHebrewCondensed-Regular.ttf") format(".ttf");
-}
-
 #app {
   font-family: "Hebrew Sans Bold";
   -webkit-font-smoothing: antialiased;

@@ -83,8 +83,12 @@ export default {
         font-family: "Josefin Sans" !important;
     }
 
+    #navbar-right {
+      padding-top: 10px; 
+    }
     #navbar-right a {
         color: #ea8700; 
+        padding-top: .8em;
     }
     
     #navbar .highlight {

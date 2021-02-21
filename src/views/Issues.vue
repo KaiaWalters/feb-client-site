@@ -28,42 +28,8 @@
          <Transparency v-else/>
        </div>
       </section>
-
-      <section id="footer">
-        <div>
-          <span>Stay connected with Nikkia</span>
-        </div>
-         <ul class="icons">
-          <li>
-            <a
-              href="https://twitter.com/Nikkia4Boston"
-              class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <!-- <li>
-            <a
-              href="https://www.instagram.com/nikkia4boston/"
-              class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li> -->
-          <li>
-            <a href="https://www.instagram.com/nikkia4boston/" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="mailto:nikkiajeancharles@gmail.com" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Paid for by the Committee to Elect Nikkia Charles</li>
-          <li><a href="https://www.linkedin.com/in/kaiawalters/">Developed by Kaia Walters</a></li>
-        </ul>
-      </section>
+      <Footer/>
+    
     </body>
   </div>
 </template>
@@ -73,6 +39,7 @@ import FoodAbundance from '../components/FoodAbundance.vue';
 import NavBar from "../components/NavBar.vue";
 import PublicPeace from "../components/PublicPeace.vue"
 import Transparency from '../components/Transparency.vue';
+import Footer from "../components/Footer.vue"
 
 export default {
   name: "Issues",
@@ -80,7 +47,8 @@ export default {
     NavBar, 
     PublicPeace,
     Transparency,
-    FoodAbundance
+    FoodAbundance, 
+    Footer
   },
   data: function () {
     return {
@@ -149,7 +117,7 @@ export default {
 <style scoped>
 @import "/src/assets/css/main.css";
 @import "/src/assets/css/noscript.css";
-.container {
+.container{
   color:black;
   padding: 1em;
   font-family: "Open Sans";
@@ -157,6 +125,13 @@ export default {
   width:90%;
 }
 
+b{
+  color: black !important;
+}
+
+.button.wide {
+  font-size: 1.2em;
+}
 .major h2 {
   font-family: "Josefin Sans" !important;
   margin-top: 1em;
