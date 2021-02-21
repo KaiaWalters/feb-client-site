@@ -5,11 +5,13 @@
         <h2>Transparency &amp; Accountability</h2>
     </header>
     <div class="Issues">
-        <p>It's about starting a new political framework that works for the people, redefining what it means to be accountable to your values while in office. There is no doubt this job is tough especially watching elders make the same mistakes time and again, it's time to break the cycle and try new strategies in how we communicate and keep relationships with elected officials. It is important that I set a precedent in how I keep myself accountable with the support of my constituents and peers. I will always be transparent and upfront with my constituents so that they are in the loop and updated on what is going on. I will be truthful and open to any suggestions brought to me by other community members. 
-        <br>
-        Linked here is our campaign’s <a href="https://actionnetwork.org/forms/feedback-form/">feedback collection form</a>. If you ever see me going away from my values, please, hold me accountable, and help me grow.  
-        <br>
-        We must reimagine the relationship between our local governments and the communities they claim to serve. The government is supposed to work for the people, but it clearly is no’t. There have been too many times where critical decisions were made without the people’s input.</p>
+        <p>It's about starting a new political framework that works for the people, redefining what it means to be accountable to your values while in office. There is no doubt this job is tough especially watching elders make the same mistakes time and again, it's time to break the cycle and try new strategies in how we communicate and keep relationships with elected officials. It is important that I set a precedent in how I keep myself accountable with the support of my constituents and peers. I will always be transparent and upfront with my constituents so that they are in the loop and updated on what is going on. I will be truthful and open to any suggestions brought to me by other community members. </p>
+        <p> 
+          <br>
+          Linked here is our campaign’s <a href="https://actionnetwork.org/forms/feedback-form/">feedback collection form</a>. If you ever see me going away from my values, please, hold me accountable, and help me grow.  
+          <br>
+          We must reimagine the relationship between our local governments and the communities they claim to serve. The government is supposed to work for the people, but it clearly is no’t. There have been too many times where critical decisions were made without the people’s input.
+        </p>
 
         <p><b>I am committed to creating structures that enable community members to hold me accountable for my actions. </b>First and foremost, accountability cannot happen without transparency, and so I will always strive to be upfront and honest with my District 4 community. I  hope to rely on that community to also call me in when they see me straying from my values. Read the accountability pledge that I took, and I hope you can sign our community accountability pledge as well saying you’ll hold me accountable.</p>
 

@@ -74,6 +74,7 @@ export default {
   i {
     font-size: 30px;
     color: #8b0c0e;
+    margin-right: 3px;
   }
 
   #navigation-mobile {
