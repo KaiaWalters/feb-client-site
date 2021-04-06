@@ -3,7 +3,19 @@
     <body class="is-preload">
       <NavBar />
       <Header/>
+      <!-- Form -->
       <!-- One -->
+      <section style="padding: 75px 150px;" id="two" class="main style2">
+        <div class="row gtr-150">
+
+          <div class="col-12 col-12-medium">
+            <h2 class="m13">
+                "Join Us in the Fight for District Four!"
+            </h2>
+            <div class="typeform-widget" scrolling="no" data-url="https://form.typeform.com/to/CQKQv6MG?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> 
+          </div>
+        </div>
+      </section>
       <section id="one" class="main style1">
         <div class="container">
           <!-- here -->
@@ -89,7 +101,7 @@
                 lower mills library from closing down, and when I went to the
                 Mattapan Library, I saw kids who looked like me get the police
                 called on them unnecessarily. In the fourth grade, I watched as
-                black and brown kids get thrown into paddy wagons for having
+                black and brown kids get thrown into police vans for having
                 mental health breakdowns.
               </p>
               <p>
@@ -201,6 +213,12 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    show: function() {
+            this.$modal.show('my-first-modal');
+    },
+    hide: function() {
+            this.$modal.hide('my-first-modal');
+    },
     handleScroll (event) {
        this.scrollFunction()
        console.log(event)
@@ -217,7 +235,10 @@ export default {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-  }
+  },
+  mount () {
+        this.show()
+    }
 };
 </script>
 
@@ -299,6 +320,10 @@ header.major:after {
 .open {
   transform: translateY(300px);
 }
+.typeform {
+  background-color: blue;
+}
+
 @media screen and (max-width:980px) {
   .major-icons li:first-child {
     display: none;

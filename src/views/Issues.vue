@@ -80,6 +80,7 @@ export default {
           this.selectedIssue = this.content.three;
           break;
       }
+      
     },
     hideBanners: function () {
        if(window.innerWidth < 1300) {
