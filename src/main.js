@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueMq from 'vue-mq'
+import VueMeta from 'vue-meta'
 import App from './App.vue'
 import router from './router'
 
@@ -17,4 +18,8 @@ Vue.use(VueMq, {
     tablet: 1250,
     desktop: Infinity,
   }
+})
+
+Vue.use(VueMeta, {
+  refreshOnceOnNavigation: true
 })

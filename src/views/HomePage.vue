@@ -390,6 +390,11 @@ header.major:after {
 #volunteerBanner span {
   margin-right: 15px; 
 }
+
+#volunteerBanner router-link span :hover {
+  color: yellow !important;
+}
+
 #volunteerBanner div {
   display: inline; 
   width:20%;
