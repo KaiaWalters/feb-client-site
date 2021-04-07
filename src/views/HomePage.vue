@@ -15,14 +15,14 @@
           </button>
 
           <!-- volunteer banner -->
-          <div @click="route()" id="volunteerBanner">
+          <!-- <div @click="route()" id="volunteerBanner">
             <router-link :to="{name:'CampaignSignUp'}">
                 <span>BECOME A CAMPAIGN ORGANIZAER</span>
             </router-link>
             <div @click="hide()">
               <i class="fas fa-times"></i>
             </div>
-          </div>
+          </div> -->
          
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
