@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import Issues from '../views/Issues.vue'
+import CampaignSignUp from '../views/CampaignSignUp.vue'
 
 
 Vue.use(VueRouter)
@@ -20,7 +21,12 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     //component: () => import(/* webpackChunkName: "about" */ '../views/Issues.vue')
-  }
+  },
+  {
+    path: '/organize',
+    name: 'CampaignSignUp',
+    component: CampaignSignUp
+  },
 ]
 
 const router = new VueRouter({

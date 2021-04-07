@@ -5,23 +5,25 @@
       <Header/>
       <!-- Form -->
       <!-- One -->
-      <section style="padding: 75px 150px;" id="two" class="main style2">
-        <div class="row gtr-150">
-
-          <div class="col-12 col-12-medium">
-            <h2 class="m13">
-                "Join Us in the Fight for District Four!"
-            </h2>
-            <div class="typeform-widget" scrolling="no" data-url="https://form.typeform.com/to/CQKQv6MG?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> 
-          </div>
-        </div>
-      </section>
       <section id="one" class="main style1">
+
         <div class="container">
-          <!-- here -->
+
+          <!-- scroll to top button -->
           <button @click="topFunction()" id="myBtn" title="Go to top">
             <i class="fas fa-arrow-up"></i>
           </button>
+
+          <!-- volunteer banner -->
+          <div @click="route()" id="volunteerBanner">
+            <router-link :to="{name:'CampaignSignUp'}">
+                <span>BECOME A CAMPAIGN ORGANIZAER</span>
+            </router-link>
+            <div @click="hide()">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+         
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
               <header class="major">
@@ -213,27 +215,30 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    show: function() {
-            this.$modal.show('my-first-modal');
-    },
-    hide: function() {
-            this.$modal.hide('my-first-modal');
-    },
     handleScroll (event) {
        this.scrollFunction()
        console.log(event)
     },
     scrollFunction: function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
-    }
-  },
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("volunteerBanner").style.display = "none";
+      } 
+      else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        document.getElementById("volunteerBanner").style.display = "block";
+      } 
+      else {
+        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("volunteerBanner").style.display = "block";
+      }
+    },
     // When the user clicks on the button, scroll to the top of the document
     topFunction: function() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }, 
+    hide: function() {
+       document.getElementById("volunteerBanner").style.display = "none";
     }
   },
   mount () {
@@ -368,5 +373,25 @@ header.major:after {
 }
 #myBtn i:hover {
   color:white; 
+}
+
+#volunteerBanner {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 30px;
+  margin: 0px;
+  left: 0px;
+  z-index: 99;
+  font-size: 2em;
+  background-color: #8b0c0ee1;
+}
+
+#volunteerBanner span {
+  margin-right: 15px; 
+}
+#volunteerBanner div {
+  display: inline; 
+  width:20%;
 }
 </style>
