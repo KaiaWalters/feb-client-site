@@ -10,7 +10,7 @@
               Keep up with Nikkia!
             </h2>
             <span style="margin-bottom:10px;">Subscribe to the newsletter</span>
-       <div style="display:flex; justify-content:center;">
+          <div style="display:flex; justify-content:center;">
             <div class="typeform-widget" data-url="https://form.typeform.com/to/R98p7umE?typeform-medium=embed-snippet" style=" margin-top: 10px; width: 80%; height: 25em;"></div> 
           </div>
       </section>
@@ -26,7 +26,7 @@
           <!-- volunteer banner -->
           <div @click="route()" id="volunteerBanner">
             <a href="https://secure.actblue.com/donate/nikkia4boston">
-               <span>Donate to Nikkia Jean-Charles Committee</span>
+               <span> Contribute to the Nikkia Jean-Charles Committee</span>
             </a>
             <div @click="hide()">
               <i class="fas fa-times"></i>
