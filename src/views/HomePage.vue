@@ -5,18 +5,7 @@
       <Header/>
       <!-- Form -->
       <!-- One -->
-      <section id="one" class="main style2">
-           <h2 class="m13" style="margin-bottom: 0px;">
-              Keep up with Nikkia!
-            </h2>
-            <span style="margin-bottom:10px;">Subscribe to the newsletter</span>
-          <div style="display:flex; justify-content:center;">
-            <div class="typeform-widget" data-url="https://form.typeform.com/to/R98p7umE?typeform-medium=embed-snippet" style=" margin-top: 10px; width: 80%; height: 25em;"></div> 
-          </div>
-      </section>
-
       <section id="one" class="main style1">
-
         <div class="container">
           <!-- scroll to top button -->
           <button @click="topFunction()" id="myBtn" title="Go to top">
@@ -58,9 +47,17 @@
           </div>
         </div>
       </section>
-
+      <section id="one" class="main style2">
+           <h2 class="m13" style="margin-bottom: 0px;">
+              Keep up with Nikkia!
+            </h2>
+            <span style="margin-bottom:10px;">Subscribe to the newsletter</span>
+          <div style="display:flex; justify-content:center;">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/R98p7umE?typeform-medium=embed-snippet" style=" margin-top: 10px; width: 80%; height: 25em;"></div> 
+          </div>
+      </section>
       <!-- Two -->
-      <section id="two" class="main style2">
+      <section id="two" class="main style1">
         <div class="container">
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
@@ -71,7 +68,7 @@
             </div>
             <div class="col-6 col-12-medium">
               <header class="major">
-                <h2>
+                <h2 class="m13">
                   "As a community organizer, survivor, and longtime resident of
                   District 4, I wanted to create a campaign that is framed by my
                   lived experiences."
@@ -133,7 +130,7 @@
       </section>
 
       <!-- Three -->
-      <section id="three" class="main style1 special">
+      <section id="three" class="main style2 special">
         <div class="container">
           <header class="major">
             <h2>Our Vision</h2>
@@ -188,14 +185,14 @@
       </section>
 
       <!-- Four -->
-      <section id="four" class="main style2 special">
+      <section id="four" class="main style1 special">
         <div class="container">
           <header class="major">
             <h2>WANT TO GET INVOLVED?</h2>
           </header>
           <ul class="actions special">
             <li><a href="https://secure.actblue.com/donate/nikkia4boston" class="button wide primary">Donate</a></li>
-            <li><a href="https://actionnetwork.org/forms/become-a-campaign-organizer" class="button wide">Become an organizer</a></li>
+            <li><a href="https://actionnetwork.org/forms/become-a-campaign-organizer" class="button wide primary">Become an organizer</a></li>
             <li><a href="mailto:nikkiajeancharles@gmail.com" class="button wide primary">Contact Us</a></li>
           </ul>
         </div>
@@ -305,10 +302,14 @@ input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
   background-color: #8b0c0e;
-  color: white !important;
+  color: black !important;
 }
 .button.wide:hover{
   background-color: #ffffff !important;
+}
+.button.wide.primary:hover{
+  color: white !important;
+  background-color: #8b0c0e !important;
 }
 .major h2 {
   font-family: "Josefin Sans" !important;
@@ -339,14 +340,8 @@ header.major:after {
 .open {
   transform: translateY(300px);
 }
-.typeform {
-  background-color: blue;
-}
-@media (max-width: 900px) {
-   .typeform-widget{
-    height: 2rem; 
-    width:50%;
-  }
+.issue_header {
+  color:#ea8700 !important;
 }
 @media screen and (max-width:980px) {
   .major-icons li:first-child {
