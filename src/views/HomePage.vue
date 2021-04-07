@@ -5,10 +5,19 @@
       <Header/>
       <!-- Form -->
       <!-- One -->
+      <section id="one" class="main style2">
+           <h2 class="m13" style="margin-bottom: 0px;">
+              Keep up with Nikkia!
+            </h2>
+            <span style="margin-bottom:10px;">Subscribe to the newsletter</span>
+       <div style="display:flex; justify-content:center;">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/R98p7umE?typeform-medium=embed-snippet" style=" margin-top: 10px; width: 80%; height: 25em;"></div> 
+          </div>
+      </section>
+
       <section id="one" class="main style1">
 
         <div class="container">
-
           <!-- scroll to top button -->
           <button @click="topFunction()" id="myBtn" title="Go to top">
             <i class="fas fa-arrow-up"></i>
@@ -16,14 +25,14 @@
 
           <!-- volunteer banner -->
           <div @click="route()" id="volunteerBanner">
-            <router-link :to="{name:'CampaignSignUp'}">
-                <span>BECOME A CAMPAIGN ORGANIZAER</span>
-            </router-link>
+            <a href="https://secure.actblue.com/donate/nikkia4boston">
+               <span>Donate to Nikkia Jean-Charles Committee</span>
+            </a>
             <div @click="hide()">
               <i class="fas fa-times"></i>
             </div>
           </div> 
-         
+
           <div class="row gtr-150">
             <div class="col-6 col-12-medium">
               <header class="major">
@@ -208,6 +217,11 @@ export default {
     Header,
     Footer
   },
+  metaInfo: {
+    meta: [
+      { 'HTTP-EQUIV': 'refresh', content: '0' }
+    ]
+  },
   created () {
     window.addEventListener('scroll', this.handleScroll);
   },
@@ -328,7 +342,12 @@ header.major:after {
 .typeform {
   background-color: blue;
 }
-
+@media (max-width: 900px) {
+   .typeform-widget{
+    height: 2rem; 
+    width:50%;
+  }
+}
 @media screen and (max-width:980px) {
   .major-icons li:first-child {
     display: none;
@@ -346,8 +365,8 @@ header.major:after {
     padding: 0px;
     margin-top: 8px;
   }
-
 }
+
 #myBtn i {
   height: 20px; 
   width: 35px;
