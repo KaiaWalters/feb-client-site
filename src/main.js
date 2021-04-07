@@ -7,6 +7,8 @@ import router from './router'
 require('/src/assets/css/noscript.css');
 require('/src/assets/css/main.css');
 
+Vue.config.productionTip = true
+
 new Vue({
   router,
   render: h => h(App),

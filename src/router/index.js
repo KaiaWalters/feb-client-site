@@ -27,6 +27,11 @@ const routes = [
     name: 'CampaignSignUp',
     component: CampaignSignUp
   },
+  {
+    path: '/*',
+    name: '',
+    component: 404
+  }
 ]
 
 const router = new VueRouter({
