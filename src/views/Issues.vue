@@ -122,7 +122,7 @@ export default {
   color:black;
   padding: 1em;
   font-family: "Open Sans";
-  font-size: .75em;
+  font-size: 1em;
   width:90%;
 }
 

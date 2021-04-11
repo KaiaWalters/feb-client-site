@@ -5,10 +5,21 @@
         <router-link style="padding:0px;" :to="{name:'Home'}"><img id="logo" src="../assets/css/images/logo.svg" alt="Nikia Campaign Logo"></router-link>
         <div id="navbar-right">
              <router-link :to="{name:'Home'}">MEET NIKKIA</router-link>
-             <router-link :to="{name:'Issues'}">ISSUES</router-link>
-              <router-link :to="{name:'CampaignSignUp'}">JOIN US</router-link>
+             <router-link :to="{name:''}">
+                <span 
+                @mouseover="display = true"
+                @mouseleave="display = false"
+                >PLATFORM</span> 
+             </router-link>
+             <router-link :to="{name:'CampaignSignUp'}">JOIN US</router-link>
             <a class="highlight" href="https://secure.actblue.com/donate/nikkia4boston">DONATE</a>
         </div>
+    </div>
+    <div @mouseover="display = true"
+         @mouseleave="display = false"
+         v-bind:class="[display ? 'showOpt' : 'hideOpt']">
+      <router-link :to="{name:'Issues'}">Issues</router-link>
+      <a href="https://actionnetwork.org/user_files/user_files/000/054/797/original/accountability_pledge_(4).pdf">Accountability Pledge</a>
     </div>
   </div>
 </template>
@@ -27,7 +38,8 @@ export default {
   }, 
   data:() => {
     return {
-      mobileview: false
+      mobileview: false,
+      display: false
     }
   },
   methods: {
@@ -68,6 +80,40 @@ export default {
 <style scoped>
     @import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css';
   
+.showOpt {
+    z-index: 99;
+    overflow: auto;
+    background-color:#f6efd8ee;
+    margin-bottom: 0px !important; 
+    padding:0px; 
+    position: fixed;
+    top: 70px;
+    right: 256px;
+    color:#ea8700;
+  }
+
+  .showOpt router-link, a {
+    display: block;
+    font-size: 1.5em; 
+    padding: 10px; 
+  }
+
+  .hideOpt {
+    display: none;
+  }
+
+.platform {
+    margin-bottom: 25px; 
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+.platform a, router-link {
+  margin: 10px 0px 5px 0px;
+
+}
+  
     #navbar.shrink {
       padding: 5px !important;
 
@@ -80,7 +126,6 @@ export default {
     #navbar {
         background-color: #f6efd8 !important;
         padding: 20px !important; 
-        font-family: "Josefin Sans" !important;
     }
 
     #navbar-right {
@@ -89,6 +134,10 @@ export default {
     #navbar-right a {
         color: #ea8700; 
         padding-top: .8em;
+        font-family: "Josefin Sans" !important;
+        font-size: 25px;
+        font-weight: 600;
+        display: inline-block;
     }
     
     #navbar .highlight {

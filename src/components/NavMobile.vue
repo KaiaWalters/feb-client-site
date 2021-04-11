@@ -1,12 +1,18 @@
 <template>
   <div id="navigation-mobile">
     <i @click="toggleNavMenu()" class="fas fa-bars"></i>
-    <h1 v-if="isActive">NIKKIA JEAN-CHARLES</h1>
+    <h1 v-if="isActive">
+      <router-link @click="toggleNavMenu()" :to="{name:'Home'}">NIKKIA JEAN-CHARLES</router-link>
+    </h1>
     <ul v-bind:class="[isActive ? 'hideMenu' : 'showMenu']">
       <router-link @click="toggleNavMenu()" :to="{name:'Home'}">MEET NIKKIA</router-link>
-      <router-link @click="toggleNavMenu()" :to="{name:'Issues'}">ISSUES</router-link>
+      <li @click="toggleDropDown()" v-bind:class="[display ? 'showDrop' : 'hideDrop']">PLATFORM</li> 
+      <div class="platform" v-if="display">
+         <router-link :to="{name:'Issues'}">Issues</router-link>
+          <a href="https://actionnetwork.org/user_files/user_files/000/054/797/original/accountability_pledge_(4).pdf">Accountability Pledge</a>
+      </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbAr151anh7MYOuYqnFH14b3n9S1H7NpVzTN-EMiLKjrJcGQ/viewform?usp=pp_url">JOIN US</a>
-      <ul class="icons">
+    <ul class="icons">
         <li>
           <a
             href="https://twitter.com/Nikkia4Boston"
@@ -42,10 +48,14 @@ export default {
   name: "NavMobile", 
   data: () => {
     return {  
-      isActive: true
+      isActive: true,
+      display: false
     }
   },
   methods: {
+     toggleDropDown: function(){
+      this.display = !this.display;
+    },
     toggleNavMenu: function(){
       this.isActive = !this.isActive;
     }
@@ -54,6 +64,29 @@ export default {
 </script>
 
 <style lang="css" scoped>
+ul a ,li {
+  color: #ea8700; 
+  margin-bottom: 25px;
+
+  padding: 0px; 
+}
+
+.showDrop {
+  margin-bottom: 0px !important; 
+  padding:0px; 
+}
+
+.platform {
+    margin-bottom: 25px; 
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+.platform a, router-link {
+  margin: 10px 0px 5px 0px;
+
+}
 
   .icons {
     padding: 0px !important;
@@ -78,7 +111,7 @@ export default {
   }
 
   #navigation-mobile {
-      background-color: #f6efd8 !important;
+      background-color: #f6efd8ee !important;
       font-family: "Josefin Sans" !important;
       padding: 30px !important;
       display: flex;
@@ -100,11 +133,6 @@ export default {
       margin-bottom: 25px;
       cursor: pointer;
       width:86%;
-    }
-    
-    ul a {
-      color: #ea8700; 
-      margin-bottom: 25px;
     }
 
   #navigation-mobile ul {
