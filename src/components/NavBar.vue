@@ -12,14 +12,14 @@
                 >PLATFORM</span> 
              </router-link>
              <router-link :to="{name:'CampaignSignUp'}">JOIN US</router-link>
-            <a class="highlight" href="https://secure.actblue.com/donate/nikkia4boston">DONATE</a>
+            <a class="highlight" href="https://secure.actblue.com/donate/nikkia4boston" target="_blank">DONATE</a>
         </div>
     </div>
     <div @mouseover="display = true"
          @mouseleave="display = false"
          v-bind:class="[display ? 'showOpt' : 'hideOpt']">
       <router-link :to="{name:'Issues'}">Issues</router-link>
-      <a href="https://actionnetwork.org/user_files/user_files/000/054/797/original/accountability_pledge_(4).pdf">Accountability Pledge</a>
+      <a href="https://actionnetwork.org/user_files/user_files/000/054/797/original/accountability_pledge_(4).pdf" target="_blank">Accountability Pledge</a>
     </div>
   </div>
 </template>
@@ -85,15 +85,17 @@ export default {
     overflow: auto;
     background-color:#f6efd8ee;
     margin-bottom: 0px !important; 
-    padding:0px; 
+    padding-top:10px; 
     position: fixed;
     top: 70px;
-    right: 256px;
+    right: 11.5%;
     color:#ea8700;
+    display: flex;
+    flex-direction:column;
   }
 
   .showOpt router-link, a {
-    display: block;
+    align-self: flex-start;
     font-size: 1.5em; 
     padding: 10px; 
   }

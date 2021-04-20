@@ -14,7 +14,7 @@
 
           <!-- volunteer banner -->
           <div @click="route()" id="volunteerBanner">
-            <a href="https://secure.actblue.com/donate/nikkia4boston">
+            <a href="https://secure.actblue.com/donate/nikkia4boston" target="_blank">
                <span> Contribute to the Nikkia Jean-Charles Committee</span>
             </a>
             <div @click="hide()">
@@ -191,9 +191,9 @@
             <h2>WANT TO GET INVOLVED?</h2>
           </header>
           <ul class="actions special">
-            <li><a href="https://secure.actblue.com/donate/nikkia4boston" class="button wide primary">Donate</a></li>
-            <li><a href="https://actionnetwork.org/forms/become-a-campaign-organizer" class="button wide primary">Become an organizer</a></li>
-            <li><a href="mailto:nikkiajeancharles@gmail.com" class="button wide primary">Contact Us</a></li>
+            <li><a href="https://secure.actblue.com/donate/nikkia4boston" class="button wide primary" target="_blank">Donate</a></li>
+            <li><a href="https://actionnetwork.org/forms/become-a-campaign-organizer" class="button wide primary" target="_blank">Become an organizer</a></li>
+            <li><a href="mailto:nikkiajeancharles@gmail.com" class="button wide primary" target="_blank">Contact Us</a></li>
           </ul>
         </div>
       </section>

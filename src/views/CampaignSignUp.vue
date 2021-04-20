@@ -2,15 +2,10 @@
   <section id="container">
      <section style="" id="" class="">
         <div class="row">
-          <div class="col-6 col-12-medium left-column">
-            <h2 class="m13">
-                
-            </h2>
-          </div>
-            <div class="col-6 col-12-medium">
+          <div class="col-6 col-12-medium left-column" style="background-color: rgb(255,215,0);"></div>
+          <div class="col-6 col-12-medium">
             <div class="typeform-widget" scrolling="no" data-url="https://form.typeform.com/to/CQKQv6MG?typeform-medium=embed-snippet" style="width: 100%; height: 300px;"></div> 
           </div>
-    
         </div>
         
       </section>
@@ -36,11 +31,10 @@ export default {
 <style scoped>
 
 .left-column {
-    background-image: url(../assets/css/images/sunset.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(../assets/css/images/organizerInfo.png);  
+    background-repeat: no-repeat;
+    background-size: 90% 99%;
+      background-position: 80px 5px;
 }
 
 .typeform-widget {
